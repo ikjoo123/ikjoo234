@@ -4,7 +4,7 @@ Public photo gallery backed by Cloudflare Worker and R2.
 
 - Worker URL: https://ikjoo234-photos.zjaghkf0000.workers.dev
 - R2 bucket: `ikjoo234-photos`
-- 1 GiB application-level storage limit; each image max 25 MiB.
+- 2 GiB application-level storage limit; no application-level per-image size limit.
 - Multi-photo uploads with upload progress, virtual folders, single and bulk ZIP downloads, 500px JPEG low-quality downloads.
 - Bulk original ZIP is limited to 100 MiB per batch to avoid excessive browser memory use.
 
