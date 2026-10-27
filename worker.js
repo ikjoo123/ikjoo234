@@ -13,7 +13,7 @@ const PAGE = String.raw`<!doctype html><html lang="ko"><head><meta charset="utf-
 <div id="folders" class="gallery"></div><div id="gallery" class="gallery"></div></section>
 <div class="small" style="text-align:center;margin-top:18px">사진 저장은 Cloudflare R2를 사용합니다. 업로드 전후 화면을 닫지 말고 완료 메시지를 확인하세요.</div></main>
 <script>
-const $=id=>document.getElementById(id), LIMIT=1024*1024*1024, selected=new Set();let photos=[],folders=[],currentFolder="";
+const $=id=>document.getElementById(id), LIMIT=2*1024*1024*1024, selected=new Set();let photos=[],folders=[],currentFolder="";
 async function api(url,opts={}){const r=await fetch(url,opts);let j={};try{j=await r.json()}catch{}if(!r.ok)throw Error(j.error||"요청에 실패했습니다.");return j}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function folderPrefix(){return currentFolder?currentFolder+"/":""}
