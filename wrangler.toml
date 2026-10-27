@@ -1,0 +1,8 @@
+name = "ikjoo234-photos"
+main = "worker.js"
+compatibility_date = "2026-10-27"
+account_id = "07d71dfc3a90d2218992a34bf0cebd0f"
+
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "ikjoo234-photos"
